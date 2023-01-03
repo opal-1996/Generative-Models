@@ -63,11 +63,10 @@ P(X|y=1) = \frac{1}{\sqrt{(2\pi)^d|\Sigma_1|}}exp(-\frac{1}{2}(X - \mu_1)^T\Sigm
 $$
 
 Given data $D = \{(X_i, y_i), i=1,2,...,n\}$, we want to maximize the likelihood:
+
 $$
 \begin{aligned}
-P(data) = P(X, y) & \\
- = \prod_{i=1}^{n}P(X=X_i, y=y_i) &  \\
- = \prod_{i=1}^{n}P(X=X_i | y=y_i)P(y=y_i)
+P(X, y) = \prod_{i=1}^{n}P(X=X_i, y=y_i) = \prod_{i=1}^{n}P(X=X_i | y=y_i)P(y=y_i)
 \end{aligned}
 $$
 
